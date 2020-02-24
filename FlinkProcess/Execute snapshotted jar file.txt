@@ -1,0 +1,10 @@
+./build-target/bin/flink run -c tw.Tw ../tw-1.0-SNAPSHOT-jar-with-dependencies.jar
+--twitter-source.consumerKey s2iEQ0cpAYL9T999RxNzOqDSW --twitter-source.consumerSecret fZicERZUgdjvhMkHzKoIBFODBz7L0gwJVvLnkXhVlH2DGEYtTW 
+--twitter-source.token 917093178137808896-SHPreegaWxr2QzIdpfnpZ4KmfozS6ui --twitter-source.tokenSecret gWdYWNhOsK2LtWscDUDzcEIVFohXhF4JL5E4G3WoMjJCJ --output /Users/li2he1/Desktop/output.txt
+
+
+
+tweets.writeAsText(params.get("output"), FileSystem.WriteMode.OVERWRITE);
+
+
+./build-target/bin/flink run -c tw.Tw ../tw-1.0-SNAPSHOT-jar-with-dependencies.jar
